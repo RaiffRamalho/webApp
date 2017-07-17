@@ -1,9 +1,12 @@
-
 <div>
   <p>Welcome to {{socialNetwork}}</p>
 </div>
-<app-profile></app-profile>
+<app-profile [data]="dataToSend" ></app-profile>
+<hr />
 <div>
-
   <button routerLink="/home"> login </button>
+</div>
+<hr />
+<div>
+  <button routerLink="/admin"> settings </button>
 </div>

@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class StartComponent implements OnInit {
 
   socialNetwork: string;
+  dataToSend: string;
 
   constructor() {
     this.socialNetwork = 'musician social network';
+    this.dataToSend = 'data from server';
   }
 
   ngOnInit() {

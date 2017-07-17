@@ -6,4 +6,17 @@
   <p>
     {{getLogged()}}
   </p>
+  <p>
+    {{data}}
+  </p>
+</section>
+
+
+<section>
+  <h3>two way data binding</h3>
+  <input type="text" [(ngModel)]="pessoa.name" />
+  <input type="text" [(ngModel)]="pessoa.age" />
+  <p>
+    Meu nome é {{pessoa.name}} e minha idade é de {{pessoa.age}}
+  </p>
 </section>

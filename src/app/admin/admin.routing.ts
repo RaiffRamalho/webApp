@@ -3,7 +3,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { SettingsComponent } from './settings/settings.component';
 
 const adminRoutes: Routes = [
-  { path: '', component: SettingsComponent},
+  { path: 'settings', component: SettingsComponent},
 ];
 
 

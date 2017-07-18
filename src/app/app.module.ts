@@ -9,6 +9,7 @@ import { StartComponent } from './start/start.component';
 import { routing } from './app-routing.module';
 import { AdminModule } from './admin/admin.module';
 import { HomeService } from './home/home.service';
+import { EventEmmiterComponent } from './event-emmiter/event-emmiter.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HomeService } from './home/home.service';
     HomeComponent,
     LoginComponent,
     StartComponent,
+    EventEmmiterComponent,
   ],
   imports: [
     BrowserModule,

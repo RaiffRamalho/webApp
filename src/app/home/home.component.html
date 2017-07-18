@@ -20,3 +20,10 @@
   </p><br />
   <span (mouseover) = "onMouse()" [class.highlight]="isMouseOver">Mouse event</span>
 </div>
+
+<div>
+  <app-event-emmiter valor="10"
+      (changedValue) = "onValueChanged($event)"
+  >
+  </app-event-emmiter>
+</div>

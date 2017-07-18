@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'start', component: StartComponent },
-  { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule'}
+// { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule'}
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

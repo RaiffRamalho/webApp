@@ -8,7 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SettingsComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
   }
 

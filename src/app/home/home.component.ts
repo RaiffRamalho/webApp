@@ -34,6 +34,10 @@ export class HomeComponent implements OnInit {
     this.isMouseOver = !this.isMouseOver;
   }
 
+  onValueChanged(event) {
+    console.log(event.novoValor);
+  }
+
   ngOnInit() {
   }
 

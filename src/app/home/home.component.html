@@ -12,6 +12,12 @@
   </ul>
 </nav>
 
+<div class="container" [ngSwitch]="tab">
+  <div *ngSwitchCase="'profile'">Profile</div>
+  <div *ngSwitchCase="'settings'">Settings</div>
+  <div *ngSwitchDefault>Home</div>
+</div>
+
 <div>
   <ul>
     <li *ngFor="let musicType of types">

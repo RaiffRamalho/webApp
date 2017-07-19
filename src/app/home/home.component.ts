@@ -8,6 +8,7 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent implements OnInit {
 
+  tab = 'home';
   types ;
   inputValue;
   savedValue;
@@ -15,6 +16,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private homeService: HomeService)  {
     this.types = this.homeService.getMusicianTypes();
+  }
+
+  changeTab(tabType) {
+    this.tab = tabType;
   }
 
 

@@ -1,3 +1,17 @@
+<nav class="navbar navbar-light bg-primary">
+  <ul class="nav justify-content-center">
+    <li class="nav-item" [ngClass]="{'active': tab == 'home'}" (click)="changeTab('home')">
+      <a class="nav-link">Home</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': tab == 'profile'}" (click)="changeTab('profile')">
+      <a class="nav-link">Profile</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': tab == 'settings'}" (click)="changeTab('settings')">
+      <a class="nav-link">Settings</a>
+    </li>
+  </ul>
+</nav>
+
 <div>
   <ul>
     <li *ngFor="let musicType of types">
@@ -9,21 +23,17 @@
 <div>
   <h3>Event</h3>
   <button (click)="buttonClick($event)" class="btn btn-primary"> click</button>
-  <input (keyup) = "onKeyUp($event)"
-          (keyup.enter) = "saveValue($event.target.value)"
-           type="text" />
+  <input (keyup)="onKeyUp($event)" (keyup.enter)="saveValue($event.target.value)" type="text" />
   <p>
-     Valor Atual: {{inputValue}}
+    Valor Atual: {{inputValue}}
   </p>
   <p>
-     Valor Salvo: {{savedValue}}
+    Valor Salvo: {{savedValue}}
   </p><br />
-  <span (mouseover) = "onMouse()" [class.highlight]="isMouseOver">Mouse event</span>
+  <span (mouseover)="onMouse()" [class.highlight]="isMouseOver">Mouse event</span>
 </div>
 
 <div>
-  <app-event-emmiter valor="10"
-      (changedValue) = "onValueChanged($event)"
-  >
+  <app-event-emmiter valor="10" (changedValue)="onValueChanged($event)">
   </app-event-emmiter>
 </div>

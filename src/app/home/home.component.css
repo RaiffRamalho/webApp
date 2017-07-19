@@ -1,3 +1,7 @@
 .highlight {
   background-color: grey;
 }
+
+.active {
+  color: aliceblue;
+}

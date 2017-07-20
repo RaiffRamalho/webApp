@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+// import { MdIconModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,10 +20,12 @@ import { EventEmmiterComponent } from './event-emmiter/event-emmiter.component';
     HomeComponent,
     LoginComponent,
     StartComponent,
-    EventEmmiterComponent,
+    EventEmmiterComponent
+    // MdIconModule
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     routing,
     AdminModule
   ],

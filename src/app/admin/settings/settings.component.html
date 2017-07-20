@@ -1,4 +1,21 @@
 
 <div>
   <h3>Settings</h3>
+  <md-card
+    [ngStyle]="{'color': (userActive ? 'white': 'gray'),
+                backgroundColor : (userActive ? 'blue': 'white')}"
+    (click)="onClickActive()">
+  Simple card
+  </md-card>
+</div>
+
+<div>
+  <h3>elvis</h3>
+  <p>
+    {{task.descripition}}
+  </p>
+  <!-- OPERADOR ELVIS -->
+  <p>
+    {{task.responsable?.number}}
+  </p>
 </div>

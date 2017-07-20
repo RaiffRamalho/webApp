@@ -5,14 +5,22 @@
 <!-- END INTERPOLATION -->
 
 <!-- PROPERTY BIND RECEIVING DATA FROM PARENT -->
-<app-profile [data]="dataToSend"></app-profile>
+<app-profile [data]="dataToSend">
+  Conteudo passado atraves do ng-content
+</app-profile>
 <!-- END PROPERTY BIND -->
 <hr />
 <!-- MATERIAL ANGULAR ICON -->
 <div>
   <button type="button" class="btn btn-primary" aria-label="Left Align">
-    <i class="material-icons">done</i>
+    <md-icon>home</md-icon>
   </button>
+   or
+   <button type="button" class="btn btn-primary" aria-label="Left Align">
+     <i class="material-icons">done</i>
+   </button>
+
+
 </div>
 <!-- END MATERIAL ANGULAR ICON -->
 <hr />

@@ -1,3 +1,5 @@
+<!--- NAV BAR ------------------>
+
 <nav class="navbar navbar-light bg-primary">
   <ul class="nav justify-content-center">
     <li class="nav-item" [ngClass]="{'active': tab == 'home'}" (click)="changeTab('home')">
@@ -16,8 +18,12 @@
   <div *ngSwitchCase="'profile'">Profile</div>
   <div *ngSwitchCase="'settings'">Settings</div>
   <div *ngSwitchDefault>Home</div>
+
 </div>
 
+ <!-- END NAV BAR -->
+
+<!-- NG FOR -->
 <div>
   <ul>
     <li *ngFor="let musicType of types">
@@ -26,6 +32,9 @@
   </ul>
 </div>
 
+<!-- END NG FOR -->
+
+<!-- INPUT EVENT BIND -->
 <div>
   <h3>Event</h3>
   <button (click)="buttonClick($event)" class="btn btn-primary"> click</button>
@@ -38,8 +47,11 @@
   </p><br />
   <span (mouseover)="onMouse()" [class.highlight]="isMouseOver">Mouse event</span>
 </div>
+<!-- END INPUT EVENT BIND -->
 
+<!-- OUTPUT EVENT -->
 <div>
   <app-event-emmiter valor="10" (changedValue)="onValueChanged($event)">
   </app-event-emmiter>
 </div>
+<!-- END OUTPUT EVENT -->

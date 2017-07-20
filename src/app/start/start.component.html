@@ -1,8 +1,22 @@
+<!-- INTERPOLATION -->
 <div>
   <p>Welcome to {{socialNetwork}}</p>
 </div>
-<app-profile [data]="dataToSend" ></app-profile>
+<!-- END INTERPOLATION -->
+
+<!-- PROPERTY BIND RECEIVING DATA FROM PARENT -->
+<app-profile [data]="dataToSend"></app-profile>
+<!-- END PROPERTY BIND -->
 <hr />
+<!-- MATERIAL ANGULAR ICON -->
+<div>
+  <button type="button" class="btn btn-primary" aria-label="Left Align">
+    <i class="material-icons">done</i>
+  </button>
+</div>
+<!-- END MATERIAL ANGULAR ICON -->
+<hr />
+<!-- ROUTING -->
 <div>
   <button routerLink="/home"> login </button>
 </div>
@@ -10,3 +24,4 @@
 <div>
   <button routerLink="/settings"> settings </button>
 </div>
+<!-- END ROUTING -->
